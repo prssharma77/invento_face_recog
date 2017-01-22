@@ -64,7 +64,7 @@ def face_detection():
    conn.close()
        
        
-
+#Using opencv to detect face in frame and then passing it to API
 cascPath = sys.argv[1]
 faceCascade = cv2.CascadeClassifier(cascPath)
 
