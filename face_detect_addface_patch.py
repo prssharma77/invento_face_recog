@@ -12,12 +12,12 @@ headers = {
    
    
 body1={}
-body1['personGroupId']='4'
-body1['personId']='6488c3f6-5e86-4c51-ba87-594e3afda66d'
+body1['personGroupId']='1210'
+body1['personId']='--fill you person id here--'
 body1_d=json.dumps(body1)
 params = urllib.urlencode(body1)
 body=""
-path = '/Users/parasmanisharma/Desktop/images'
+path = '/Users/parasmanisharma/Desktop/images'   # change path to your directory
 for filename in os.listdir(path): 
    file = path + "/" + filename
    f = open(file, "rb")
