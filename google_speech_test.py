@@ -96,7 +96,7 @@ def start_recording() :
       r = sum(values[:int(num_samples * 0.2)]) / int(num_samples * 0.2)
       abg[k]=abg[k-1] + r
       if k == 90:
-         average_intensity = abg[30]/30
+         average_intensity = abg[90]/90
          print average_intensity
          k=0
     
@@ -136,7 +136,5 @@ while True :
            stream.start_stream()
     print " Finished "
     print " Average audio intensity is ", r
-    start_time = time.time()
-
     stream.close()
     p.terminate() 
