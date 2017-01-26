@@ -74,8 +74,9 @@ while True:
     for (x, y, w, h) in faces:
       x =faces.size
       lap1= time.time()
-      flag = 0
+      
       if (start- lap1 ) > 5:
+        flag = 0
         if x>0 :     #face detected by opencv
            cv2.imwrite("frame%d.jpg" % count, frame)     # save frame as JPEG file
            img_file= "frame%d.jpg" % count
