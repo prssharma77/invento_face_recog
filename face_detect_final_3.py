@@ -10,7 +10,7 @@ def add_face(person_id):
    headers = {
        # Request headers
        'Content-Type': 'application/octet-stream',
-       'Ocp-Apim-Subscription-Key': '80693c2ebacf44eb919f8554b48ae038',
+       'Ocp-Apim-Subscription-Key': '--key--',
    }
    
    
